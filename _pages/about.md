@@ -3,7 +3,8 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-Hi! I am Raman Dutt. I recently graduated with a bachelor's degree in Computer Science from [Shiv Nadar University, India](https://snu.edu.in/). Presently, I am working as a research intern at the Healthcare Innovations and Translational Informatics Lab at Emory University.  
+<img align="right" src="/images/raman.jpeg" width="100" height="150" />
+Hi! I am Raman Dutt. I recently graduated with a bachelor's degree in Computer Science from Shiv Nadar University, India. Presently, I am working as a research intern at the **Healthcare Innovations and Translational Informatics Lab at Emory University.**  
 
 My academic research interests include: 
 1. Domain-specific pre-training for Computer Vision
