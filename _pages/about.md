@@ -8,8 +8,8 @@ Hi! I am Raman Dutt. I recently graduated with a bachelor's degree in Computer S
 My academic research interests include: 
 1. Domain-specific pre-training for Computer Vision
 2. Medical Imaging :microscope:
-3. Computational Biology :dna:
-4. Cheminformatics  :test_tube:
+3. Computational Biology :dna: :desktop_computer:
+4. Cheminformatics :test_tube: :desktop_computer:
 
 My other interests include:  
 1. Music (Listening and Composing) :musical_note: :guitar:
@@ -22,21 +22,22 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 
 * **Research Intern, Healthcare Innovations and Translational Informatics Lab**    
 **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)  
-**Institution**: Emory University
-  * Working on segmentation and classification of Spine Hardware using X-Ray reports.
+**Institution**: Emory University  
+
+  * Working on segmentation and classification of Spine Hardware using X-Ray reports. <img align="right" src="https://media.giphy.com/media/U7LqpyMWtoeSXayium/giphy.gif" width="100" height="100" />
   * Working on the identification of Melanoma in lesion images for the [SIIM-2020 challenge](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview).    
   
 * **Research Intern, TavLab**    
 **Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)  
 **Institution**: Indraprastha Institute of Information Technology, Delhi
-  * Worked on classification of thermal images and videos using CNN+LSTM based architectures.
-  * Implemented and studied different strategies for domain-specific model pretraining and evaluation on highly imbalanced medical datasets.
+  * Worked on classification of thermal images and videos using CNN+LSTM based architectures. <img align="right" src="https://media.giphy.com/media/IaoleEkKamH4I/giphy.gif" width="100" height="100" />
+  * Implemented and studied different strategies for domain-specific model pretraining and evaluation on highly imbalanced medical datasets. 
   * Worked on Visualization of the attention heads of the model using gradCAM.  
 
 * **Undergraduate Student Researcher, Opportunities for Undergraduate Research (OUR) Program**  
 **Research Advisor**: [Dr. N Sukumar](https://chemistry.snu.edu.in/people/faculty/n-sukumar)  
 **Institution**: Shiv Nadar University
-  * Explored Capsule Networks to circumvent the 3D QSAR problem in pharmacophore-based drug modeling.
+  * Explored Capsule Networks to circumvent the 3D QSAR problem in pharmacophore-based drug modeling. <img align="right" src="https://media.giphy.com/media/YkdMsdnGIk8tiuYlIZ/giphy.gif" width="100" height="100" />
   * Implemented 1D Capsule Networks for the task of Drug Activity Prediction using RECON (2D) and MOE (3D) descriptors. 
   * Achieved SOTA performance on 2 out of 3 datasets. 
   * Links: [ResearchGate](https://bit.ly/2YpjvWS) and [Project Website](https://bit.ly/38w9f3K)
