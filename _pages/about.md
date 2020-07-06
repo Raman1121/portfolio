@@ -3,13 +3,22 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-Hi! I am Raman Dutt, a recent graduate in Computer Science from [Shiv Nadar University, India](https://snu.edu.in/). I am interested in both theoretical and applicative deep learning. Theoretically, I am interested in different pretraining strategies for computer vision tasks in different domains. On the applicative side, I enjoy working on Medical Imaging and Cheminformatics problems. I was fortunate enough to serve as **the president of the ACM chapter** and also the **Student Lead for the Developer Student Club (DSC)** at Shiv Nadar University. 
+Hi! I am Raman Dutt. I recently graduated with a bachelor's degree in Computer Science from [Shiv Nadar University, India](https://snu.edu.in/). Presently, I am working as a research intern at the Healthcare Innovations and Translational Informatics Lab at Emory University.  
 
-Apart from this, I am very closely attached to music and obtained a **Grade 3 certification in guitar from Trinity School of Music, London** in the past. In recent times, I have developed a passion for different forms of exercises (weight training and calisthenics) and can be often found experimenting with different workout mixes. 
+My academic research interests include: 
+1. Domain-specific pre-training for Computer Vision
+2. Medical Imaging :microscope:
+3. Computational Biology :dna:
+4. Cheminformatics  :test_tube:
+
+My other interests include:  
+1. Music (Listening and Composing) :musical_note: :guitar:
+2. Sports (Basketball) :basketball:
+3. Physical Fitness [weight training and calisthenics {Thanks to COVID}] :weight_lifting:  
 
 You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a472126/) and [Twitter](https://twitter.com/RamanDutt4).
 
-# Research Experience  
+## Research Experience  
 
 * **Research Intern, Healthcare Innovations and Translational Informatics Lab**    
 **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)  
@@ -32,7 +41,7 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
   * Achieved SOTA performance on 2 out of 3 datasets. 
   * Links: [ResearchGate](https://bit.ly/2YpjvWS) and [Project Website](https://bit.ly/38w9f3K)
   
-# Hackathons
+## Hackathons
 * Winner, Smart India Hackathon (SIH-2019)
   * Applied R-CNN for vehicle detection and Max-Flow Min-Cut algorithm for optimizing traffic flow through a junction.
 * Winner, Hack2Hire
@@ -40,13 +49,13 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 * Winner, HackData (2017)
   * Built a product for automatic separation of biodegradable and non biodegradable waste using Machine learning (Image Recognition), Android, Web and Arduino.
   
-# Community and Leadership
+## Community and Leadership
 
 * President, Association for Computing Machinery (ACM) chapter.
 * Lead, Developer Student Club (DSC)
 * Member, Student Counseling Committee
 
-# Extra-Curriculars
+## Extra-Curriculars
 
 * SNU Basketball Team (2016-2017)
 * Toastmasters International SNU chapter.
