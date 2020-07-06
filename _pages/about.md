@@ -31,3 +31,23 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
   * Implemented 1D Capsule Networks for the task of Drug Activity Prediction using RECON (2D) and MOE (3D) descriptors. 
   * Achieved SOTA performance on 2 out of 3 datasets. 
   * Links: [ResearchGate](https://bit.ly/2YpjvWS) and [Project Website](https://bit.ly/38w9f3K)
+  
+# Hackathons
+* Winner, Smart India Hackathon (SIH-2019)
+  * Applied R-CNN for vehicle detection and Max-Flow Min-Cut algorithm for optimizing traffic flow through a junction.
+* Winner, Hack2Hire
+  * Build an android application improving the experience of existing B2B applications in terms of intelligence, UI and Analytics
+* Winner, HackData (2017)
+  * Built a product for automatic separation of biodegradable and non biodegradable waste using Machine learning (Image Recognition), Android, Web and Arduino.
+  
+# Community and Leadership
+
+* President, Association for Computing Machinery (ACM) chapter.
+* Lead, Developer Student Club (DSC)
+* Member, Student Counseling Committee
+
+# Extra-Curriculars
+
+* SNU Basketball Team (2016-2017)
+* Toastmasters International SNU chapter.
+* Dramatics Club (Imprints)
