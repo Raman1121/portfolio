@@ -20,6 +20,8 @@ My other interests include:
 You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a472126/) and [Twitter](https://twitter.com/RamanDutt4).
 
 ## Research Experience  
+
+{% include alert.html text="Presently at" %}
 * **Research Intern, Healthcare Innovations and Translational Informatics Lab**     
   **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)    
   **Institution**: Emory University  
@@ -30,8 +32,9 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
  * Working on the identification of Melanoma in lesion images for the [SIIM-2020 challenge](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview).
 
 <p> </p>
-    
-* **Research Intern, TavLab [Undergraduate Thesis]**      
+
+{% include info.html text="Undergraduate Thesis" %}
+* **Research Intern, TavLab**      
   **Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)    
   **Institution**: Indraprastha Institute of Information Technology, Delhi    
   **Area of Research**: Medical Imaging :microscope:  
