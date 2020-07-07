@@ -19,7 +19,7 @@ My other interests include:
 
 You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a472126/) and [Twitter](https://twitter.com/RamanDutt4).
 
-{% include important.html text="Research Experience" %}
+{% include info.html text="Research Experience" %}
 
 * **Research Intern, Healthcare Innovations and Translational Informatics Lab**     
   **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)   
@@ -30,8 +30,8 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
   Spine Hardware using X-Ray reports.
  * Working on the identification of Melanoma in lesion images for the [SIIM-2020 challenge](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview).
 
-<hr style="border:1px solid gray"> </hr>
 <p> </p>
+---
 
 {% include alert.html align="right" text="Undergraduate Thesis" %}
 
@@ -44,8 +44,8 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
  * Implemented and studied different strategies for domain-specific model pretraining and evaluation on highly imbalanced medical datasets.
  * Worked on Visualization of the attention heads of the model using gradCAM.
  
- <hr style="border:1px solid gray"> </hr>
 <p> </p>
+---
 
 * **Undergraduate Student Researcher, Opportunities for Undergraduate Research (OUR) Program**  
   **Research Advisor**: [Dr. N Sukumar](https://chemistry.snu.edu.in/people/faculty/n-sukumar)  
@@ -59,8 +59,8 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
  * Achieved SOTA performance on 2 out of 3 datasets. 
  * Links: [ResearchGate](https://bit.ly/2YpjvWS) and [Project Website](https://bit.ly/38w9f3K)
  
- <hr style="border:1px solid gray"> </hr>
  <p> </p>  
+---
   
 * **Research Intern, Raghava Group**  
   **Research Advisor**: [Dr. G.P.S Raghava](https://webs.iiitd.edu.in/raghava/)  
@@ -73,8 +73,8 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
  * Implemented a deep neural network based on the architecture of Capsule Network. 
  * Performed feature selection and dimensionality reduction.
  
- <hr style="border:1px solid gray"> </hr>
-<p> </p>  
+<p> </p> 
+---
 
 * **Undergraduate Student Researcher, Independent Research**  
   **Research Advisor**: [Dr. Vinita Krishna](https://gm.snu.edu.in/people/faculty/vinita-krishna)  
@@ -88,8 +88,9 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
  * Forecasted the patent grant using machine learning.
  * Published in International Journal of Computer Applications (Vol 178).
  * Publication: [Link](https://bit.ly/2C8jsYi)
-<hr style="border:1px solid gray"> </hr>
+ 
 <p> </p>  
+---
 
 * **Summer Research Intern, Summer Research Fellowship Program**  
   **Research Advisor**: [Dr. Shanmuganathan Raman](https://www.iitgn.ac.in/faculty/cse/shanmuganathan)  
@@ -101,7 +102,6 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
  * Implemented bilateral filters, guided filters and DNNs for Tone Mapping, Image dehazing.  
 
 <p> </p>
-
   
 ## Hackathons
 * **Winner, Smart India Hackathon (SIH-2019)** :boom:
