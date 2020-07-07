@@ -33,7 +33,7 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 <p> </p>
 ---
 
-{% include alert.html align="right" text="Undergraduate Thesis" %}
+> Important: Undergraduate Thesis.
 
 * **Research Intern, TavLab**      
   **Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)    
