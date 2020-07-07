@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-<img align="right" src="/images/raman.jpeg" width="180" height="240" />
+<img align="right" src="/images/raman.jpeg" width="171" height="256" />
 Hi! I am Raman Dutt. I recently graduated with a bachelor's degree in Computer Science from Shiv Nadar University, India. Presently, I am working as a research intern at the **[Healthcare Innovations and Translational Informatics Lab at Emory University](http://hitilab.org/)**  
 
 My academic research interests include: 
@@ -41,8 +41,8 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 **Research Advisor**: [Dr. N Sukumar](https://chemistry.snu.edu.in/people/faculty/n-sukumar)  
 **Institution**: Shiv Nadar University  
 **Area of Research**: Cheminformatics, Computer Vision :alembic: :desktop_computer:
-  * Explored Capsule Networks to circumvent the   
-  3D QSAR problem in pharmacophore-based drug modeling. <img align="right" src="https://media.giphy.com/media/YkdMsdnGIk8tiuYlIZ/giphy.gif" width="150" height="150" />
+  * Explored Capsule Networks to circumvent the 3D QSAR     
+   problem in pharmacophore-based drug modeling. <img align="right" src="https://media.giphy.com/media/YkdMsdnGIk8tiuYlIZ/giphy.gif" width="150" height="150" />
   * Implemented 1D Capsule Networks for the task of Drug Activity Prediction using RECON (2D) and MOE (3D) descriptors. 
   * Achieved SOTA performance on 2 out of 3 datasets. 
   * Links: [ResearchGate](https://bit.ly/2YpjvWS) and [Project Website](https://bit.ly/38w9f3K)
@@ -56,6 +56,27 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
   * Implemented ensembles such as Bagging, Boosting, Voting and Cascaded-classifiers.
   * Implemented a deep neural network based on the architecture of Capsule Network. 
   * Performed feature selection and dimensionality reduction.
+  
+* **Undergraduate Student Researcher, Independent Research**  
+**Research Advisor**: [Dr. Vinita Krishna](https://gm.snu.edu.in/people/faculty/vinita-krishna)  
+**Institution**: Shiv Nadar University  
+**Area of Research**: Patent Analysis :books:
+  * Research on forecasting the patent grant duration. <img align="right" src="https://media.giphy.com/media/LqCa8dVe41WPRzNozz/giphy.gif" width="150" height="100" />     
+  * Automated Data collection from Indian Patent Database (inPASS)
+  * Explored and studied different factors affecting patent grant duration.
+  * Forecasted the patent grant using machine learning.
+  * Published in International Journal of Computer Applications (Vol 178)
+  * Publication: [Link](https://bit.ly/2C8jsYi)
+  
+* **Summer Research Intern, Summer Research Fellowship Program**  
+**Research Advisor**: [Dr. Shanmuganathan Raman](https://www.iitgn.ac.in/faculty/cse/shanmuganathan)  
+**Institution**: Indian Institute of Technology, Gandhinagar  
+**Area of Research**: Digital Image Processing <img align="right" src="https://media.giphy.com/media/TQAdxJWqM5soE/giphy.gif" width="180" height="150" />
+  * Selected amongst 300 students all over India for the SRFP program by the **Indian Academy of Sciences**. 
+  * Worked on Digital Image Processing and classical Computer Vision.
+  * Implemented bilateral filters, guided filters and DNNs for Tone Mapping, Image dehazing.
+
+  
   
 ## Hackathons
 * Winner, Smart India Hackathon (SIH-2019)
