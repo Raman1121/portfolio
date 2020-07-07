@@ -19,7 +19,7 @@ My other interests include:
 
 You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a472126/) and [Twitter](https://twitter.com/RamanDutt4).
 
-{% include info.html text="Research Experience" %}
+## Research Experience
 
 * **Research Intern, Healthcare Innovations and Translational Informatics Lab**     
   **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)   
