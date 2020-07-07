@@ -21,62 +21,73 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 
 ## Research Experience  
 
-* **Research Intern, Healthcare Innovations and Translational Informatics Lab**    
-**Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)  
-**Institution**: Emory University  
-**Area of Research**: Medical Imaging, Health Informatics :microscope: :bar_chart: <img align="right" src="https://media.giphy.com/media/U7LqpyMWtoeSXayium/giphy.gif" width="150" height="150" />
-  * Working on segmentation and classification of   
-  Spine Hardware using X-Ray reports. 
-  * Working on the identification of Melanoma in lesion images for the [SIIM-2020 challenge](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview).  
+1. **Research Intern, Healthcare Innovations and Translational Informatics Lab**     
+   **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)    
+   **Institution**: Emory University  
+   **Area of Research**: Medical Imaging, Health Informatics :microscope: :bar_chart: <img align="right" src="https://media.giphy.com/media/U7LqpyMWtoeSXayium/giphy.gif" width="150" height="150" />
+   <p> </p>
+    * Working on segmentation and classification of   
+ Spine Hardware using X-Ray reports.
+    * Working on the identification of Melanoma in lesion images for the [SIIM-2020 challenge](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview).
+ 
+<p> </p>
     
-* **Research Intern, TavLab [Undergraduate Thesis]**    
-**Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)  
-**Institution**: Indraprastha Institute of Information Technology, Delhi  
-**Area of Research**: Medical Imaging :microscope:
-  * Worked on classification of thermal images and videos using CNN+LSTM based architectures. <img align="right" src="https://media.giphy.com/media/IaoleEkKamH4I/giphy.gif" width="150" height="150" />
-  * Implemented and studied different strategies for domain-specific model pretraining and evaluation on highly imbalanced medical datasets. 
-  * Worked on Visualization of the attention heads of the model using gradCAM.  
-    
-* **Undergraduate Student Researcher, Opportunities for Undergraduate Research (OUR) Program**  
-**Research Advisor**: [Dr. N Sukumar](https://chemistry.snu.edu.in/people/faculty/n-sukumar)  
-**Institution**: Shiv Nadar University  
-**Area of Research**: Cheminformatics, Computer Vision :alembic: :desktop_computer:
-  * Explored Capsule Networks to circumvent the 3D QSAR     
-   problem in pharmacophore-based drug modeling. <img align="right" src="https://media.giphy.com/media/YkdMsdnGIk8tiuYlIZ/giphy.gif" width="150" height="150" />
-  * Implemented 1D Capsule Networks for the task of Drug Activity Prediction using RECON (2D) and MOE (3D) descriptors. 
-  * Achieved SOTA performance on 2 out of 3 datasets. 
-  * Links: [ResearchGate](https://bit.ly/2YpjvWS) and [Project Website](https://bit.ly/38w9f3K)
-  
-  
-* **Research Intern, Raghava Group**  
-**Research Advisor**: [Dr. G.P.S Raghava](https://webs.iiitd.edu.in/raghava/)  
-**Institution**: Indraprastha Institute of Information Technology, Delhi  
-**Area of Research**: Computational Biology :petri_dish:
-  * Worked on the classification of allergenic protein sequences. <img align="right" src="https://media.giphy.com/media/l1fWtMmQbuGvm/giphy.gif" width="100" height="150" />
-  * Implemented ensembles such as Bagging, Boosting, Voting and Cascaded-classifiers.
-  * Implemented a deep neural network based on the architecture of Capsule Network. 
-  * Performed feature selection and dimensionality reduction.
-  
-* **Undergraduate Student Researcher, Independent Research**  
-**Research Advisor**: [Dr. Vinita Krishna](https://gm.snu.edu.in/people/faculty/vinita-krishna)  
-**Institution**: Shiv Nadar University  
-**Area of Research**: Patent Analysis :books:
-  * Research on forecasting the patent grant duration. <img align="right" src="https://media.giphy.com/media/LqCa8dVe41WPRzNozz/giphy.gif" width="150" height="100" />     
-  * Automated Data collection from Indian Patent Database (inPASS)
-  * Explored and studied different factors affecting patent grant duration.
-  * Forecasted the patent grant using machine learning.
-  * Published in International Journal of Computer Applications (Vol 178)
-  * Publication: [Link](https://bit.ly/2C8jsYi)
-  
-* **Summer Research Intern, Summer Research Fellowship Program**  
-**Research Advisor**: [Dr. Shanmuganathan Raman](https://www.iitgn.ac.in/faculty/cse/shanmuganathan)  
-**Institution**: Indian Institute of Technology, Gandhinagar  
-**Area of Research**: Digital Image Processing <img align="right" src="https://media.giphy.com/media/TQAdxJWqM5soE/giphy.gif" width="180" height="150" />
-  * Selected amongst 300 students all over India for the SRFP program by the **Indian Academy of Sciences**. 
-  * Worked on Digital Image Processing and classical Computer Vision.
-  * Implemented bilateral filters, guided filters and DNNs for Tone Mapping, Image dehazing.
+2. **Research Intern, TavLab [Undergraduate Thesis]**      
+   **Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)    
+   **Institution**: Indraprastha Institute of Information Technology, Delhi    
+   **Area of Research**: Medical Imaging :microscope:  
+   <p> </p>
+    * Worked on classification of thermal images and videos using CNN+LSTM based architectures. <img align="right" src="https://media.giphy.com/media/IaoleEkKamH4I/giphy.gif" width="150" height="150" />
+    * Implemented and studied different strategies for domain-specific model pretraining and evaluation on highly imbalanced medical datasets.
+    * Worked on Visualization of the attention heads of the model using gradCAM.
+<p> </p>
 
+3. **Undergraduate Student Researcher, Opportunities for Undergraduate Research (OUR) Program**  
+   **Research Advisor**: [Dr. N Sukumar](https://chemistry.snu.edu.in/people/faculty/n-sukumar)  
+   **Institution**: Shiv Nadar University  
+   **Area of Research**: Cheminformatics, Computer Vision :alembic: :desktop_computer: 
+   <p> </p>
+    * Explored Capsule Networks to circumvent the 3D QSAR     
+     problem in pharmacophore-based drug modeling. <img align="right" src="https://media.giphy.com/media/YkdMsdnGIk8tiuYlIZ/giphy.gif" width="150" height="150" />
+    * Implemented 1D Capsule Networks for the task of Drug Activity Prediction using RECON (2D) and MOE (3D) descriptors. 
+    * Achieved SOTA performance on 2 out of 3 datasets. 
+    * Links: [ResearchGate](https://bit.ly/2YpjvWS) and [Project Website](https://bit.ly/38w9f3K)
+<p> </p>  
   
+4. **Research Intern, Raghava Group**  
+   **Research Advisor**: [Dr. G.P.S Raghava](https://webs.iiitd.edu.in/raghava/)  
+   **Institution**: Indraprastha Institute of Information Technology, Delhi  
+   **Area of Research**: Computational Biology :petri_dish:
+<p> </p>
+    * Worked on the classification of allergenic protein sequences. <img align="right" src="https://media.giphy.com/media/l1fWtMmQbuGvm/giphy.gif" width="100" height="150" />
+    * Implemented ensembles such as Bagging, Boosting, Voting and Cascaded-classifiers.
+    * Implemented a deep neural network based on the architecture of Capsule Network. 
+    * Performed feature selection and dimensionality reduction.
+<p> </p>  
+
+5. **Undergraduate Student Researcher, Independent Research**  
+   **Research Advisor**: [Dr. Vinita Krishna](https://gm.snu.edu.in/people/faculty/vinita-krishna)  
+   **Institution**: Shiv Nadar University  
+   **Area of Research**: Patent Analysis :books: 
+ <p> </p>
+    * Research on forecasting the patent grant duration. <img align="right" src="https://media.giphy.com/media/LqCa8dVe41WPRzNozz/giphy.gif" width="150" height="100" />     
+    * Automated Data collection from Indian Patent Database (inPASS)
+    * Explored and studied different factors affecting patent grant duration.
+    * Forecasted the patent grant using machine learning.
+    * Published in International Journal of Computer Applications (Vol 178)
+    * Publication: [Link](https://bit.ly/2C8jsYi)
+<p> </p>  
+
+6. **Summer Research Intern, Summer Research Fellowship Program**  
+   **Research Advisor**: [Dr. Shanmuganathan Raman](https://www.iitgn.ac.in/faculty/cse/shanmuganathan)  
+   **Institution**: Indian Institute of Technology, Gandhinagar  
+   **Area of Research**: Digital Image Processing <img align="right" src="https://media.giphy.com/media/TQAdxJWqM5soE/giphy.gif" width="180" height="150" />
+<p> </p>
+     * Selected amongst 300 students all over India for the SRFP program by the **Indian Academy of Sciences**. 
+     * Worked on Digital Image Processing and classical Computer Vision.
+     * Implemented bilateral filters, guided filters and DNNs for Tone Mapping, Image dehazing.
+<p> </p>
+
   
 ## Hackathons
 * Winner, Smart India Hackathon (SIH-2019)
