@@ -23,7 +23,7 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 
 
 * **Research Intern, Healthcare Innovations and Translational Informatics Lab**     
-  **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)    {% include alert.html text="Presently at" %}
+  **Research Advisor**: [Dr. Hari Trivedi](https://med.emory.edu/departments/radiology/profile/?u=HMTRIVE)   
   **Institution**: Emory University  
   **Area of Research**: Medical Imaging, Health Informatics :microscope: :bar_chart: <img align="right" src="https://media.giphy.com/media/U7LqpyMWtoeSXayium/giphy.gif" width="150" height="150" />
    <p> </p>
@@ -33,9 +33,10 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 
 <p> </p>
 
+{% include alert.html text="Undergraduate Thesis" %}
 
 * **Research Intern, TavLab**      
-  **Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)    {% include alert.html text="Undergraduate Thesis" %}
+  **Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)    
   **Institution**: Indraprastha Institute of Information Technology, Delhi    
   **Area of Research**: Medical Imaging :microscope:  
    <p> </p>
