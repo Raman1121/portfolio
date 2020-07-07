@@ -71,11 +71,12 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
    **Institution**: Shiv Nadar University  
    **Area of Research**: Patent Analysis :books: 
  <p> </p>
+ 
   * Research on forecasting the patent grant duration. <img align="right" src="https://media.giphy.com/media/LqCa8dVe41WPRzNozz/giphy.gif" width="150" height="100" />
-  * Automated Data collection from Indian Patent Database (inPASS)
+  * Automated Data collection from Indian Patent Database (inPASS).
   * Explored and studied different factors affecting patent grant duration.
   * Forecasted the patent grant using machine learning.
-  * Published in International Journal of Computer Applications (Vol 178)
+  * Published in International Journal of Computer Applications (Vol 178).
   * Publication: [Link](https://bit.ly/2C8jsYi)
   
 <p> </p>  
@@ -85,9 +86,10 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
    **Institution**: Indian Institute of Technology, Gandhinagar  
    **Area of Research**: Digital Image Processing <img align="right" src="https://media.giphy.com/media/TQAdxJWqM5soE/giphy.gif" width="180" height="150" />
 <p> </p>
-  * Selected amongst 300 students all over India for the SRFP program by the **Indian Academy of Sciences**.
-  * Worked on Digital Image Processing and classical Computer Vision.
-  * Implemented bilateral filters, guided filters and DNNs for Tone Mapping, Image dehazing.
+  * Selected amongst 300 students all over India for the SRFP program by the **Indian Academy of Sciences**.  
+  * Worked on Digital Image Processing and classical Computer Vision.  
+  * Implemented bilateral filters, guided filters and DNNs for Tone Mapping, Image dehazing.  
+  
 <p> </p>
 
   
