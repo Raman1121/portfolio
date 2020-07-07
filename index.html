@@ -2,9 +2,22 @@
 layout: home
 search_exclude: true
 ---
-
+{% assign categories = "" | split:"" %}
+{% for c in site.categories %}
+  {% assign categories = categories | push: c[0] %}
+{% endfor %}
+{% assign categories = categories | sort_natural %}
+# Posts
+<p>
+📝A blog about:
+    {% for category in categories %}
+    <a href="{{ site.baseurl }}/categories/#{{ category }}">{{ category }}</a> ·
+    {% endfor %}
+</p>
 
 ![]({{site.baseurl}}/images/raman_insta2.jpeg)
+
+
 
 
 
