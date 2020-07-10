@@ -33,8 +33,6 @@ You can connect with me on [Linkedin](https://www.linkedin.com/in/raman-dutt-84a
 <p> </p>
 ---
 
-> Important: Undergraduate Thesis.
-
 * **Research Intern, TavLab**      
   **Research Advisor**: [Dr. Tavpritesh Sethi](https://www.iiitd.ac.in/tavpritesh)    
   **Institution**: Indraprastha Institute of Information Technology, Delhi    
