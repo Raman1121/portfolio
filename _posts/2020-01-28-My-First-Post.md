@@ -20,6 +20,7 @@ Firstly, the authors start by listing out fundamental differences in the dataset
   <li> Medical datasets are much smaller in size as compared to the ImageNet dataset. </li>
   <li> Properties such as background illumination, texture and size of images in the two categories of datasets are often very different. </li>
   <li> Medical tasks often have much fewer number of classes as compared to 1000 classes in ImageNet. </li> 
+</ol>
 
 These observations like confined region of interest, size, illumination and (possible) over-parameterization of models points to the fact that standard imagenet models and their pretrained weights might be sub-optimal in the medical imaging setting. 
 
@@ -44,6 +45,7 @@ In these experiments, it was observed that smaller models (CBR) perform at-par w
 <ul>
 <li> Transfer Learning has a bigger effect with very small amounts of data. </li>
 <li> Transfer primarily helps the large models and smaller models show little difference between transfer and random initialization. </li>
+</ul>
 
 In order to study the effects on hidden representations, the authors used CCA similarity score between representations learnt by different initialization schemes. 
 
