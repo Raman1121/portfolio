@@ -29,15 +29,15 @@ These observations like confined region of interest, size, illumination and (pos
 
 The authors experiment with a variety of model architectures and pretraining schemes to study their affects in feature reuse and overall model performance. 
 
-| Model Architecture  	| Description                                                                                     	|
-|---------------------	|-------------------------------------------------------------------------------------------------	|
-| **ImageNet Models** 	| Models such as ResNet50 and Inception which were originally developed for the ImageNet dataset. 	|
-| **CBR Models**      	| Simple models (of varying sizes) which follow a progression of Conv2D-BN-ReLU layers                   	|
+| Model Architecture  	| Description                                        	|
+|---------------------	|----------------------------------------------------	|
+| **ImageNet Models** 	| Model such as ResNet and Inception                 	|
+| **CBR Models**      	| Simple models following Conv2D-BN-ReLU progression 	|
 
-| Weight Initialization Scheme 	| Description                                                  	|
-|------------------------------	|--------------------------------------------------------------	|
-| **Random**                   	| Model weights initialized with Random Initialization         	|
-| **Pretrained from ImageNet** 	| Models weights obtained from pretrained networks on ImageNet 	|
+| Weight Initialization Scheme 	| Description                                                  	
+|------------------------------	|-------------------------------------- |
+| **Random**                   	| Weights initialized Randomly         	|
+| **Pretrained from ImageNet** 	| Pretrained Weights from ImageNet 	    |
 
 In these experiments, it was observed that smaller models (CBR) perform at-par with larger models such as ResNet despite significant differences in size and complexity. We see a similar outcome in experiments performed using random initialization. **These observations raise questions about de-facto practices of using models like ResNet with pretrained weights.**
 
