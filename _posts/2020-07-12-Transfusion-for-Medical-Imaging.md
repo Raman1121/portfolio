@@ -51,6 +51,19 @@ In order to study the effects on hidden representations, the authors used CCA si
 
 The above plot reveals a major detail that **representations learnt with random initialization are much more similar to each other than those learnt with pretrained ImageNet weights for larger models,with less of a distinction for smaller models.** This means that in case of larger models (ResNet50), the representations learnt when trained with random weights are more similar to each other than representations learnt with pretrained weights. In case of smaller models (CBR), the representations learnt with the two initializations do not show much difference. *Hence, initialization has a more evident effect of larger models.*
 
+## Effects of Transfer on Feature Reuse
+Feature reuse in the ability of using features already leant by pretrained models during fine tuning on a downstream (medical) task. An important question that the authors had initially set out to answer was "*Where exactly does feature reuse take place using transfer learning?*" From the experiments, it was observed that **feature reuse is mostly limited to bottom (initial) layers.** As we move towards the end (top) of the network, the difference representations after the two types of initializaions becomes very small indicating that feature reuse becomes independent of the weight initialization scheme. 
+
+## Effects of Transfer on Convergence Speed
+Along with other observations, experiments revealed that using pretrained weights offers better convergence speedup which essentially is lesser time/ number of steps to train our model. The authors report that this convergence speedup is due to better **weight scaling** provided by the pretrained weights. To support this, they performed an experiment where they initialized the weights in a random fashion but with the mean and standard deviation of pretrained weights *(thus providing the same weight scaling)*. Training is this setting demonstrated a faster convergence which concludes that **"Transfer learning contributes much more significantly in convergence speed than feature reuse."**
+
+## Proposed Strategy: Weight Transfusion
+
+
+
+
+
+
 
 
 
