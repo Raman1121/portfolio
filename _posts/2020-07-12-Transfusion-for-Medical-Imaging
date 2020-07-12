@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: Explanation of the paper: "Transfusion: Understanding Transfer Learning for Medical Imaging".
+categories: [medical imaging, model pretraining]
+title: Transfusion: Understanding Transfer Learning for Medical Imaging.
+---
+
 # Transfusion: Understanding Transfer Learning for Medical Imaging 
 
 For my undergraduate thesis, I chose to work with Dr. Tavpritesh Sethi at IIIT-Delhi at the intersection of computer vision and medicine, particularly medical imaging. During the project, I had to train several classification models with different strategies in terms of data augmentation, treating imbalance, model pretraining, etc.  
