@@ -115,6 +115,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#transfusion-understanding-transfer-learning-for-medical-imaging">Transfusion: Understanding Transfer Learning for Medical Imaging</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#paper-explanation">Paper Explanation</a></li>
+<li class="toc-entry toc-h2"><a href="#experiments">Experiments</a></li>
+<li class="toc-entry toc-h2"><a href="#notable-observations">Notable Observations</a></li>
+<li class="toc-entry toc-h2"><a href="#effects-of-transfer-on-feature-reuse">Effects of Transfer on Feature Reuse</a></li>
+<li class="toc-entry toc-h2"><a href="#effects-of-transfer-on-convergence-speed">Effects of Transfer on Convergence Speed</a></li>
+<li class="toc-entry toc-h2"><a href="#proposed-strategy-weight-transfusion">Proposed Strategy: Weight Transfusion</a></li>
 </ul>
 </li>
 </ul><h1 id="transfusion-understanding-transfer-learning-for-medical-imaging">
@@ -133,54 +138,80 @@ window.onload = wrap_img;
   <li> Medical datasets are much smaller in size as compared to the ImageNet dataset. </li>
   <li> Properties such as background illumination, texture and size of images in the two categories of datasets are often very different. </li>
   <li> Medical tasks often have much fewer number of classes as compared to 1000 classes in ImageNet. </li> 
+</ol>
 
-These observations like confined region of interest, size, illumination and (possible) over-parameterization of models points to the fact that standard imagenet models and their pretrained weights might be sub-optimal in the medical imaging setting. 
+<p>These observations like confined region of interest, size, illumination and (possible) over-parameterization of models points to the fact that standard imagenet models and their pretrained weights might be sub-optimal in the medical imaging setting.</p>
 
-## Experiments
+<h2 id="experiments">
+<a class="anchor" href="#experiments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Experiments</h2>
 
-The authors experiment with a variety of model architectures and pretraining schemes to study their affects in feature reuse and overall model performance. 
+<p>The authors experiment with a variety of model architectures and pretraining schemes to study their affects in feature reuse and overall model performance.</p>
 
-| Model Architecture  	| Description                                                                                     	|
-|---------------------	|-------------------------------------------------------------------------------------------------	|
-| **ImageNet Models** 	| Models such as ResNet50 and Inception which were originally developed for the ImageNet dataset. 	|
-| **CBR Models**      	| Simple models (of varying sizes) which follow a progression of Conv2D-BN-ReLU layers                   	|
+<table>
+  <thead>
+    <tr>
+      <th>Model Architecture</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ImageNet Models</strong></td>
+      <td>Models such as ResNet50 and Inception which were originally developed for the ImageNet dataset.</td>
+    </tr>
+    <tr>
+      <td><strong>CBR Models</strong></td>
+      <td>Simple models (of varying sizes) which follow a progression of Conv2D-BN-ReLU layers</td>
+    </tr>
+  </tbody>
+</table>
 
-| Weight Initialization Scheme 	| Description                                                  	|
-|------------------------------	|--------------------------------------------------------------	|
-| **Random**                   	| Model weights initialized with Random Initialization         	|
-| **Pretrained from ImageNet** 	| Models weights obtained from pretrained networks on ImageNet 	|
+<table>
+  <thead>
+    <tr>
+      <th>Weight Initialization Scheme</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Random</strong></td>
+      <td>Model weights initialized with Random Initialization</td>
+    </tr>
+    <tr>
+      <td><strong>Pretrained from ImageNet</strong></td>
+      <td>Models weights obtained from pretrained networks on ImageNet</td>
+    </tr>
+  </tbody>
+</table>
 
-In these experiments, it was observed that smaller models (CBR) perform at-par with larger models such as ResNet despite significant differences in size and complexity. We see a similar outcome in experiments performed using random initialization. **These observations raise questions about de-facto practices of using models like ResNet with pretrained weights.**
+<p>In these experiments, it was observed that smaller models (CBR) perform at-par with larger models such as ResNet despite significant differences in size and complexity. We see a similar outcome in experiments performed using random initialization. <strong>These observations raise questions about de-facto practices of using models like ResNet with pretrained weights.</strong></p>
 
-## Notable Observations
+<h2 id="notable-observations">
+<a class="anchor" href="#notable-observations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notable Observations</h2>
 
-</ol><ul>
+<ul>
 <li> Transfer Learning has a bigger effect with very small amounts of data. </li>
 <li> Transfer primarily helps the large models and smaller models show little difference between transfer and random initialization. </li>
-
-In order to study the effects on hidden representations, the authors used CCA similarity score between representations learnt by different initialization schemes. 
-
-![](/portfolio/images/Transfusion/CCA-plot.PNG "Plotting CCA similarity score wrt different initialization schemes.")
-
-The above plot reveals a major detail that **representations learnt with random initialization are much more similar to each other than those learnt with pretrained ImageNet weights for larger models,with less of a distinction for smaller models.** This means that in case of larger models (ResNet50), the representations learnt when trained with random weights are more similar to each other than representations learnt with pretrained weights. In case of smaller models (CBR), the representations learnt with the two initializations do not show much difference. *Hence, initialization has a more evident effect of larger models.*
-
-## Effects of Transfer on Feature Reuse
-Feature reuse in the ability of using features already leant by pretrained models during fine tuning on a downstream (medical) task. An important question that the authors had initially set out to answer was "*Where exactly does feature reuse take place using transfer learning?*" From the experiments, it was observed that **feature reuse is mostly limited to bottom (initial) layers.** As we move towards the end (top) of the network, the difference representations after the two types of initializaions becomes very small indicating that feature reuse becomes independent of the weight initialization scheme. 
-
-## Effects of Transfer on Convergence Speed
-Along with other observations, experiments revealed that using pretrained weights offers better convergence speedup which essentially is lesser time/ number of steps to train our model. The authors report that this convergence speedup is due to better **weight scaling** provided by the pretrained weights. To support this, they performed an experiment where they initialized the weights in a random fashion but with the mean and standard deviation of pretrained weights *(thus providing the same weight scaling)*. Training is this setting demonstrated a faster convergence which concludes that **"Transfer learning contributes much more significantly in convergence speed than feature reuse."**
-
-## Proposed Strategy: Weight Transfusion
-
-
-
-
-
-
-
-
-
 </ul>
+
+<p>In order to study the effects on hidden representations, the authors used CCA similarity score between representations learnt by different initialization schemes.</p>
+
+<p><img src="/portfolio/images/Transfusion/CCA-plot.PNG" alt="" title="Plotting CCA similarity score wrt different initialization schemes."></p>
+
+<p>The above plot reveals a major detail that <strong>representations learnt with random initialization are much more similar to each other than those learnt with pretrained ImageNet weights for larger models,with less of a distinction for smaller models.</strong> This means that in case of larger models (ResNet50), the representations learnt when trained with random weights are more similar to each other than representations learnt with pretrained weights. In case of smaller models (CBR), the representations learnt with the two initializations do not show much difference. <em>Hence, initialization has a more evident effect of larger models.</em></p>
+
+<h2 id="effects-of-transfer-on-feature-reuse">
+<a class="anchor" href="#effects-of-transfer-on-feature-reuse" aria-hidden="true"><span class="octicon octicon-link"></span></a>Effects of Transfer on Feature Reuse</h2>
+<p>Feature reuse in the ability of using features already leant by pretrained models during fine tuning on a downstream (medical) task. An important question that the authors had initially set out to answer was “<em>Where exactly does feature reuse take place using transfer learning?</em>” From the experiments, it was observed that <strong>feature reuse is mostly limited to bottom (initial) layers.</strong> As we move towards the end (top) of the network, the difference representations after the two types of initializaions becomes very small indicating that feature reuse becomes independent of the weight initialization scheme.</p>
+
+<h2 id="effects-of-transfer-on-convergence-speed">
+<a class="anchor" href="#effects-of-transfer-on-convergence-speed" aria-hidden="true"><span class="octicon octicon-link"></span></a>Effects of Transfer on Convergence Speed</h2>
+<p>Along with other observations, experiments revealed that using pretrained weights offers better convergence speedup which essentially is lesser time/ number of steps to train our model. The authors report that this convergence speedup is due to better <strong>weight scaling</strong> provided by the pretrained weights. To support this, they performed an experiment where they initialized the weights in a random fashion but with the mean and standard deviation of pretrained weights <em>(thus providing the same weight scaling)</em>. Training is this setting demonstrated a faster convergence which concludes that <strong>“Transfer learning contributes much more significantly in convergence speed than feature reuse.”</strong></p>
+
+<h2 id="proposed-strategy-weight-transfusion">
+<a class="anchor" href="#proposed-strategy-weight-transfusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proposed Strategy: Weight Transfusion</h2>
+
 
   </div><a class="u-url" href="/portfolio/medical%20imaging/model%20pretraining/2020/01/28/My-First-Post.html" hidden></a>
 </article>
