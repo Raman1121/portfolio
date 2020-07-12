@@ -4,6 +4,7 @@ layout: post
 description: "Explanation of the paper: Transfusion: Understanding Transfer Learning for Medical Imaging."
 categories: [medical imaging, model pretraining]
 title: "Transfusion: Understanding Transfer Learning for Medical Imaging."
+comments: true
 ---
 
 # Transfusion: Understanding Transfer Learning for Medical Imaging 
@@ -59,7 +60,13 @@ Feature reuse in the ability of using features already leant by pretrained model
 ## Effects of Transfer on Convergence Speed
 Along with other observations, experiments revealed that using pretrained weights offers better convergence speedup which essentially is lesser time/ number of steps to train our model. The authors report that this convergence speedup is due to better **weight scaling** provided by the pretrained weights. To support this, they performed an experiment where they initialized the weights in a random fashion but with the mean and standard deviation of pretrained weights *(thus providing the same weight scaling)*. Training is this setting demonstrated a faster convergence which concludes that **"Transfer learning contributes much more significantly in convergence speed than feature reuse."**
 
-## Proposed Strategy: Weight Transfusion
+## Weight Transfusion -> Hybrid Approaches
+The authors perform a weight transfusion experiment where they "transfer" a continuous set of pretrained weights for one part of the network and randomly initialize rest of the network and then training on the medical task. The results show that simply using pretrained weights for a small segment of the network gives similar performance as full transfer learning.
+
+This leads to the conclusion that a hybrid training strategy needs to be devised where the network is initialized with pretrained weights upto a certain point, 'Block2' in ResNet50 for instance and redesiging the top of the network to be more lightweight, initializing these layers randomly, and training this new model end to end.
+
+Synthetic filters such as Gabor filters can also be used to initialize the first convolution layer with random initialization for rest of the model.
+
 
 
 
