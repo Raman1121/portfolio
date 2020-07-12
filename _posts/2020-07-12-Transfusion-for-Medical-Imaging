@@ -1,1 +1,5 @@
+# Transfusion: Understanding Transfer Learning for Medical Imaging 
+
+For my undergraduate thesis, I chose to work with Dr. Tavpritesh Sethi at IIIT-Delhi at the intersection of computer vision and medicine, particularly medical imaging. During the project, I had to train several classification models with different strategies in terms of data augmentation, treating imbalance, model pretraining, etc.  
+While experimenting with different pretraining methods, I observed some marked differences in the training dynamics of the network which got me interested in this particular field and led me to this paper by the Google Brain team.  
 
