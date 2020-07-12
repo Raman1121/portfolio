@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://raman1121.github.io/portfolio/feed.xml" rel="self" type="application/atom+xml" /><link href="https://raman1121.github.io/portfolio/" rel="alternate" type="text/html" /><updated>2020-07-12T06:47:45-05:00</updated><id>https://raman1121.github.io/portfolio/feed.xml</id><title type="html">Raman Dutt . Blog</title><subtitle>A collection of my research, thoughts and experiences.</subtitle><entry><title type="html">Transfusion: Understanding Transfer Learning for Medical Imaging.</title><link href="https://raman1121.github.io/portfolio/medical%20imaging/model%20pretraining/2020/07/12/Transfusion.html" rel="alternate" type="text/html" title="Transfusion: Understanding Transfer Learning for Medical Imaging." /><published>2020-07-12T00:00:00-05:00</published><updated>2020-07-12T00:00:00-05:00</updated><id>https://raman1121.github.io/portfolio/medical%20imaging/model%20pretraining/2020/07/12/Transfusion</id><content type="html" xml:base="https://raman1121.github.io/portfolio/medical%20imaging/model%20pretraining/2020/07/12/Transfusion.html">&lt;h1 id=&quot;transfusion-understanding-transfer-learning-for-medical-imaging&quot;&gt;Transfusion: Understanding Transfer Learning for Medical Imaging&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://raman1121.github.io/portfolio/feed.xml" rel="self" type="application/atom+xml" /><link href="https://raman1121.github.io/portfolio/" rel="alternate" type="text/html" /><updated>2020-07-12T07:03:55-05:00</updated><id>https://raman1121.github.io/portfolio/feed.xml</id><title type="html">Raman Dutt . Blog</title><subtitle>A collection of my research, thoughts and experiences.</subtitle><entry><title type="html">Transfusion: Understanding Transfer Learning for Medical Imaging.</title><link href="https://raman1121.github.io/portfolio/medical%20imaging/model%20pretraining/2020/07/12/Transfusion.html" rel="alternate" type="text/html" title="Transfusion: Understanding Transfer Learning for Medical Imaging." /><published>2020-07-12T00:00:00-05:00</published><updated>2020-07-12T00:00:00-05:00</updated><id>https://raman1121.github.io/portfolio/medical%20imaging/model%20pretraining/2020/07/12/Transfusion</id><content type="html" xml:base="https://raman1121.github.io/portfolio/medical%20imaging/model%20pretraining/2020/07/12/Transfusion.html">&lt;h1 id=&quot;transfusion-understanding-transfer-learning-for-medical-imaging&quot;&gt;Transfusion: Understanding Transfer Learning for Medical Imaging&lt;/h1&gt;
 
 &lt;p&gt;For my undergraduate thesis, I chose to work with Dr. Tavpritesh Sethi at IIIT-Delhi at the intersection of computer vision and medicine, particularly medical imaging. During the project, I had to train several classification models with different strategies in terms of data augmentation, treating imbalance, model pretraining, etc. While experimenting with different pretraining methods, I observed some marked differences in the training dynamics of the network which got me interested in this particular field and led me to this &lt;a href=&quot;https://arxiv.org/abs/1902.07208&quot;&gt;paper&lt;/a&gt; by the Google Brain team.&lt;/p&gt;
 
@@ -30,11 +30,11 @@
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;ImageNet Models&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Models such as ResNet50 and Inception which were originally developed for the ImageNet dataset.&lt;/td&gt;
+      &lt;td&gt;Model such as ResNet and Inception&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;CBR Models&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Simple models (of varying sizes) which follow a progression of Conv2D-BN-ReLU layers&lt;/td&gt;
+      &lt;td&gt;Simple models following Conv2D-BN-ReLU progression&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -49,11 +49,11 @@
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;Random&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Model weights initialized with Random Initialization&lt;/td&gt;
+      &lt;td&gt;Weights initialized Randomly&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;Pretrained from ImageNet&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Models weights obtained from pretrained networks on ImageNet&lt;/td&gt;
+      &lt;td&gt;Pretrained Weights from ImageNet&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
