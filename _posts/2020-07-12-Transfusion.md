@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: "Explanation of the paper: Transfusion: Understanding Transfer Learning for Medical Imaging."
-categories: [medical imaging, model pretraining]
+categories: [medical imaging, model pretraining, paper summary]
 title: "Transfusion: Understanding Transfer Learning for Medical Imaging."
 comments: true
 ---
