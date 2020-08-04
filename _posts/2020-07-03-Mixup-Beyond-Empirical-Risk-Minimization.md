@@ -7,8 +7,6 @@ title: "mixup: Beyond Empirical Risk Minimization"
 comments: true
 ---
 
-# mixup: Beyond Empirical Risk Minimization
-
 If you participate in Kaggle competitions especially related to image classification, you must have definately seen a notebook implementing Mixup probably along with cross validation or any other augmentation method such as CutMix, GridMask, etc which makes this a pretty important concept to have in your toolbox. During my undergraduate thesis when I was working with thermal images, I suspected that my network might suffering due to the presence of corrupted labels in the dataset. Although I had no proof about the presence of such images, I wanted to find something which makes my network more robust and generalizable. This is when I came across [Mixup](https://arxiv.org/abs/1710.09412)
 
 Mixup is a data augmentation method which comes with a promise to make neural networks more **generalizable**, **reduces memorization of corrupted labels**, **increases robustness** and **stabalizes training of Generative Adversarial Networks (GANs)**. It does so by training the network on combinations of examples in the datasets (images) and their labels. 
@@ -31,3 +29,22 @@ Here,
 3. y(i) and y(j) are one-hot encoded labels
 4. Lambda is the mixup parameter which (in a sense) controls the amount of augmentation
 
+## Experiments
+
+The authors perform a number of experiments on different modalities such as image as speech. Even though using gives a state-of-the-art performance on datasets like CIFAR-10, CIFAR-100 and ImageNet-2012. However, in my opinion,the most interesting results are on robustness and generalization of neural networks. Following the experiments conducted by Zhang et al., the authors compare mixup and ERM on memorization of corrupted labels. They take differebt variants of CIFAR-10 dataset having 20, 50 and 80% corrupted labels (thus making generalization difficult). They experiment with ERM, ERM+dropout, mixup, mixup+dropout configurations. Details about dropout probability and training schematics are given in the paper.  
+
+Neural networks are often susceptible to adversarial attacks where they behave very differently in presence of such examples in the test set. The authors test the robustness of networks with ERM and mixup agains White Box attacks (using the same model to generate adversarial examples) and Black Box attacks (using first ERM/ mixup model to generate adversarial examples and then using second ERM/mixup model for testing).  
+
+In case of white box attacks, mixup models are 2.7 times more robust than ERM models and in case of black box attacks, mixup models 1.25 times more robust. This shows that mixup produces neural networks that are signiﬁcantly more robust than ERM against adversarial examples in white box and black settings without additional overhead compared to ERM. 
+
+## Implementations
+
+In order to understand better, one can try implementing or studying an existing implementation of mixup. In this section, I will point towards a few resources using which you can easily use mixup in your training procedures. 
+
+1. [Using a training generator (TensorFlow)](https://github.com/yu4u/mixup-generator)
+2. [Kaggle Notebook which implements Mixup with Cross Validation](https://www.kaggle.com/devbruce/kakr-2019-3rd-eda-imageprep-mixup-cv-keras/notebook)
+3. [Kaggle Notebook which implemets mixup and Cutmix](https://www.kaggle.com/code1110/mixup-cutmix-in-keras#Custom-Image-Generator-with-Mixup-&-Cutmix)
+4. [A blog explaining an open-sourced implementation of mixup](https://www.dlology.com/blog/how-to-do-mixup-training-from-image-files-in-keras/)
+
+
+Thanks for reading! I hope you are able to experiment with this widely-used technique using these resources. I would strongly suggest reading the mixup paper for a proper understanding of this technique and the algorithm behind it.
