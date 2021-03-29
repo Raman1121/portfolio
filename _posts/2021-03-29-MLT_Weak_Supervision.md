@@ -48,7 +48,7 @@ In addition, the authors infuse attention modules on each of the 26 binary class
     <li> Better model interpretability by projecting model's attention distribution to the original image </li>
 </ul>
 
-### Concluding Thoughts
+## Concluding Thoughts
 
 The paper was written in a clear language making it easy to read and understand. Some of the unique ideas that had an impact on me are the following - 
 
