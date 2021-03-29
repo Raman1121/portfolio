@@ -35,7 +35,7 @@ Another interesting step that the authors perform is making BERT more specific t
 
 The authors constructed an ontology of 94 regions, expressed as a directed acyclic graph. This contains both high level regions like "chest", "pelvis", "neck" along with fine-grained regions like "left lung", "upper lobe of right lung". The directed graph is used to establish relationship between these high-level and fine-grained regions. For instance, regions such as "Hilar Lymph Node" would come point towards "Thoracic Lymph Node" which would further point towards the high-level region "Chest". As we traverse along these edges, we move from fine-grained regions to higher-level regions.  
 
-![]({{ site.baseurl }}/images/MLT_WS/ontology.PNG "Figure 1. A graph describing regional ontology relationships [Taken from the original paper]")
+![]({{ site.baseurl }}/images/MLT_WS/ontology.png "Figure 1. A graph describing regional ontology relationships [Taken from the original paper]")
 
 ### Multi-Task learning with Attention
 
@@ -53,11 +53,12 @@ In addition, the authors infuse attention modules on each of the 26 binary class
 The paper was written in a clear language making it easy to read and understand. Some of the unique ideas that had an impact on me are the following - 
 
 <ol>
-    <li> **Multi Task Learning** - I have seen MLT models performing better in some cases. Here, the performance gain is quite significant. This has motivated me to experiment with different MLT approaches for my own experiments (Kaggle and Research) </li>
+    <li> Multi Task Learning : I have seen MLT models performing better in some cases. Here, the performance gain is quite significant. This has motivated me to experiment with different MLT approaches for my own experiments (Kaggle and Research) </li>
 
-    <li> **Soft Attention** - I have always been a strong advocate of incorporating attention mechanisms particularly for medical imaging problems. This is because medical images have a bodily region of interest (ROI) as compared to natural images having a more global ROI. I am happy to see my thoughts having some practical value. </li>
+    <li> Soft Attention : I have always been a strong advocate of incorporating attention mechanisms particularly for medical imaging problems. This is because medical images have a bodily region of interest (ROI) as compared to natural images having a more global ROI. I am happy to see my thoughts having some practical value. </li>
 
-    <li> **Weak Supervision** - One of my own research projects involved weak supervision. I always believed that it offers only marginal advantage. However, this work has shown that weak supervision could offer substantial performance gains given that we have unstructured data present. This is something I would like to try for future Kaggle competitions. </li>
+    <li> Weak Supervision : One of my own research projects involved weak supervision. I always believed that it offers only marginal advantage. However, this work has shown that weak supervision could offer substantial performance gains given that we have unstructured data present. This is something I would like to try for future Kaggle competitions. </li>
 </ol>
+
 
 
