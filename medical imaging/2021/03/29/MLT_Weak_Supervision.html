@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT | Raman Dutt . Blog</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Explanation of the paper: Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT" />
+<meta property="og:description" content="Explanation of the paper: Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT" />
+<link rel="canonical" href="https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html" />
+<meta property="og:url" content="https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html" />
+<meta property="og:site_name" content="Raman Dutt . Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-29T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Explanation of the paper: Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT","@type":"BlogPosting","headline":"Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT","dateModified":"2021-03-29T00:00:00-05:00","datePublished":"2021-03-29T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html"},"url":"https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/portfolio/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://raman1121.github.io/portfolio/feed.xml" title="Raman Dutt . Blog" /><link rel="shortcut icon" type="image/x-icon" href="/portfolio/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT | Raman Dutt . Blog</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Explanation of the paper: Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT" />
+<meta property="og:description" content="Explanation of the paper: Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT" />
+<link rel="canonical" href="https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html" />
+<meta property="og:url" content="https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html" />
+<meta property="og:site_name" content="Raman Dutt . Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-29T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Explanation of the paper: Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT","@type":"BlogPosting","headline":"Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT","dateModified":"2021-03-29T00:00:00-05:00","datePublished":"2021-03-29T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html"},"url":"https://raman1121.github.io/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://raman1121.github.io/portfolio/feed.xml" title="Raman Dutt . Blog" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/portfolio/">Raman Dutt . Blog</a><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger">
+            <a class="page-link" href="/portfolio/images/Resume-Updated.pdf">Resume</a><a class="page-link" href="/portfolio/about/">About Me</a><a class="page-link" href="/portfolio/search/">Search</a><a class="page-link" href="/portfolio/categories/">Tags</a></div>
+        </nav></div>
+  </header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT</h1><p class="page-description">Explanation of the paper: Multi-task weak supervision enables anatomically resolved abnormality detection in whole-body FDG-PET/CT</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-03-29T00:00:00-05:00" itemprop="datePublished">
+        Mar 29, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/portfolio/categories/#medical imaging">medical imaging</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#motivations">Motivations</a></li>
+<li class="toc-entry toc-h2"><a href="#methodology">Methodology</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#language-model">Language Model</a></li>
+<li class="toc-entry toc-h3"><a href="#creating-a-regional-ontology">Creating a Regional Ontology</a></li>
+<li class="toc-entry toc-h3"><a href="#multi-task-learning-with-attention">Multi-Task learning with Attention</a></li>
+<li class="toc-entry toc-h3"><a href="#concluding-thoughts">Concluding Thoughts</a></li>
+</ul>
+</li>
+</ul><p>The following paper by Eyuboglu et al. has recently appeared in Nature Communications. It describes an attention-based, multi-task CNN that detects and localizes abnormalities in whole-body FDG-PET/CT scans. The “weak-supervision” in this framework comes from the process of deriving annotations from a language model trained on free-text radiology reports (a part of the dataset). The authors report the following observations -</p>
+
+<ol>
+    <li> Training in a multi-task fashion enhances the performance. </li>
+    <li> Task-specific attention modules further improve the localization performance. </li>
+    <li> Task-specific attention modules further improve the localization performance. </li>
+</ol>
+
+<h2 id="motivations">
+<a class="anchor" href="#motivations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivations</h2>
+<p>Limited availability of data has been a long-standing roadblock in the context of supervised learning. This has motivated researchers to look beyond strictly-supervised techniques such as self-supervision and weak-supervision. On a similar note, the authors address this challenge by devising a framework where they utilize data from another modality (text) is used to derive annotations.<br>
+Labeled datasets of appropriate size and structure for several diagnostic tasks are hard to find. Moreover, it is a widely known fact that deep learning models fail to generalize to datasets from different distributions. Change in imaging scanner type, adoption of a different post-processing method, etc are some of the common ways which can influence the data distribution and render the model impractical. <br>
+These challenges laid the foundation for this research. The authors have developed a framework which eliminates the need to manually annotate the dataset by inferring annotations from radiology free-text reports.</p>
+
+<p>In the next section, I will attempt my best to describe some of the major components of this work.</p>
+
+<h2 id="methodology">
+<a class="anchor" href="#methodology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methodology</h2>
+
+<h3 id="language-model">
+<a class="anchor" href="#language-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Language Model</h3>
+<p>Instead of relying on the hard-coded rules (supervised annotations), the authors develop a model to predict if an anatomical region is mentioned in case of an abnormal finding. This model is based on well-known BERT architecture.<br>
+Instead of relying on the hard-coded rules (supervised annotations), the authors develop a model to predict if an anatomical region is mentioned in case of an abnormal finding. This model is based on well-known BERT architecture.<br>
+Another interesting step that the authors perform is making BERT more specific to the medical (radiology) domain. BERT is trained on generic English text. In order to prevent the splitting of specialized, domain-specific terms in the reports, the authors develop a greedy algorithm to find the set of 3000 wordpieces that minimize the number of tokens required to reconstruct the reports in our training dataset. Out of these 3000, the words which were not present in BERT’s vocabulary were added by replacing the “unusedX” and non-ASCII tokens provided in the BERT implementation. This allowed them to leverage BERT’s original weights while adding domain-specific tokens.</p>
+
+<h3 id="creating-a-regional-ontology">
+<a class="anchor" href="#creating-a-regional-ontology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating a Regional Ontology</h3>
+
+<p>The authors constructed an ontology of 94 regions, expressed as a directed acyclic graph. This contains both high level regions like “chest”, “pelvis”, “neck” along with fine-grained regions like “left lung”, “upper lobe of right lung”. The directed graph is used to establish relationship between these high-level and fine-grained regions. For instance, regions such as “Hilar Lymph Node” would come point towards “Thoracic Lymph Node” which would further point towards the high-level region “Chest”. As we traverse along these edges, we move from fine-grained regions to higher-level regions.</p>
+
+<p><img src="/portfolio/images/MLT_WS/ontology.PNG" alt="" title="Figure 1. A graph describing regional ontology relationships [Taken from the original paper]"></p>
+
+<h3 id="multi-task-learning-with-attention">
+<a class="anchor" href="#multi-task-learning-with-attention" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multi-Task learning with Attention</h3>
+
+<p>Multi-task learning (MLT) was an idea advocated by Rich Caruana in the late 90s. In MLT, our network attempts to solve several related tasks through shared representations. MLT has significantly matured as an active area of research. This <a href="https://ruder.io/multi-task/">article</a> by Sebastian Rudder is an excellent resource to learn more about the field.<br>
+The authors of this paper describe a MLT-inspired network. They perform extensive ablation studies which show that MLT network performs much better than a standard Single Task Network. The model used was a 3D Convolutional Neural Network (CNN) with 26 binary classification task heads and a shared CNN encoder.<br>
+The MLT framework gave a superior performance in several aspects. Classes and anatomical regions with a very few samples (rare diagnoses) were identified with much higher accuracy and confidence using this approach.<br>
+In addition, the authors infuse attention modules on each of the 26 binary classification heads which offered the following advantages -</p>
+<ul>
+    <li> Improvement in mean AUROC over all 26 tasks </li>
+    <li> Better model interpretability by projecting model's attention distribution to the original image </li>
+</ul>
+
+<h3 id="concluding-thoughts">
+<a class="anchor" href="#concluding-thoughts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concluding Thoughts</h3>
+
+<p>The paper was written in a clear language making it easy to read and understand. Some of the unique ideas that had an impact on me are the following -</p>
+
+<ol>
+    <li> **Multi Task Learning** - I have seen MLT models performing better in some cases. Here, the performance gain is quite significant. This has motivated me to experiment with different MLT approaches for my own experiments (Kaggle and Research) </li>
+
+    <li> **Soft Attention** - I have always been a strong advocate of incorporating attention mechanisms particularly for medical imaging problems. This is because medical images have a bodily region of interest (ROI) as compared to natural images having a more global ROI. I am happy to see my thoughts having some practical value. </li>
+
+    <li> **Weak Supervision** - One of my own research projects involved weak supervision. I always believed that it offers only marginal advantage. However, this work has shown that weak supervision could offer substantial performance gains given that we have unstructured data present. This is something I would like to try for future Kaggle competitions. </li>
+</ol>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Raman1121/portfolio"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/portfolio/medical%20imaging/2021/03/29/MLT_Weak_Supervision.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/portfolio/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/portfolio/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/portfolio/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A collection of my research, thoughts and experiences.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/Raman1121" title="Raman1121"><svg class="svg-icon grey"><use xlink:href="/portfolio/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.instagram.com/raman.paradox" title="raman.paradox"><svg class="svg-icon grey"><use xlink:href="/portfolio/assets/minima-social-icons.svg#instagram"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/raman-dutt" title="raman-dutt"><svg class="svg-icon grey"><use xlink:href="/portfolio/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/RamanDutt4" title="RamanDutt4"><svg class="svg-icon grey"><use xlink:href="/portfolio/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
