@@ -1,0 +1,23 @@
+---
+toc: true
+layout: post
+description: "Explanation of the paper: Neural Data Server - A Large Scale Search Engine for Transfer Learning Data"
+categories: [transfer learning]
+title: "Neural Data Server - A Large Scale Search Engine for Transfer Learning Data"
+comments: true
+---
+
+# Main Ideas
+
+<ul>
+    <li> The authors introduce an idea to recommend ideal/ more suitable datasets for pretraining according to the client's downstream task. They do this by indexing a variety of large, popular datasets (ImageNet, CityScapes, etc) on a server. The users query this server with their own target dataset and the server recommends (a subset) of indexed datasets to the user for pretraining. </li>
+    
+    <li> The assumption is that the user requires only a subset of the indexed datasets which is most relevant to the downstream task. This is backed by past research which shows that more pretraining data DOES NOT lead to a better performance. Instead, smaller, more relevant datasets lead to better representations which further aid the performance on downstream tasks. </li>
+
+    <li> Once the user generates a query, the NDS computes the relevant subset in the following way - </li>
+        <ul>
+            <li> NDS is represented/ contains a number of "expert models". These models basically represent different subsets in the entire indexed dataset. For example -  a subset of animals and a subset of cars will be represented by two different models. </li>
+
+            <li> Each expert model determines the accuracy on client's dataset and the subset represented by the model with the best performance is recommended to the client. </li>
+        </ul>
+</ul>
