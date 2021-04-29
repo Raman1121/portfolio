@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: "Explanation of the paper: Neural Data Server - A Large Scale Search Engine for Transfer Learning Data"
-categories: [transfer learning]
+categories: [model pretraining]
 title: "Neural Data Server - A Large Scale Search Engine for Transfer Learning Data"
 comments: true
 ---
