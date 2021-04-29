@@ -14,10 +14,4 @@ comments: true
     
     <li> The assumption is that the user requires only a subset of the indexed datasets which is most relevant to the downstream task. This is backed by past research which shows that more pretraining data DOES NOT lead to a better performance. Instead, smaller, more relevant datasets lead to better representations which further aid the performance on downstream tasks. </li>
 
-    <li> Once the user generates a query, the NDS computes the relevant subset in the following way - </li>
-        <ul>
-            <li> NDS is represented/ contains a number of "expert models". These models basically represent different subsets in the entire indexed dataset. For example -  a subset of animals and a subset of cars will be represented by two different models. </li>
-
-            <li> Each expert model determines the accuracy on client's dataset and the subset represented by the model with the best performance is recommended to the client. </li>
-        </ul>
 </ul>
